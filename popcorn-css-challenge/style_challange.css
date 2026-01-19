@@ -1,0 +1,58 @@
+/*COLORS:
+Header background - #FFDBAA
+button - #805215
+Header Text - #553100
+Main background - #D4A76A*/
+.header_ctn {
+  background-color: #FFDBAA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  background-color: #805215;
+  color: aliceblue;
+}
+h1 {
+  color: #553100;
+}
+html {
+  background-color: #D4A76A;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+/*building it out*/
+.home_ctn {
+  flex-direction: row;
+
+}
+.top_ctn {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.bottom_ctn{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+.inner_ctn{
+  background-color:aliceblue;
+  box-shadow: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  size: 60px 25px;
+  flex-grow: 1;
+}
+
+
