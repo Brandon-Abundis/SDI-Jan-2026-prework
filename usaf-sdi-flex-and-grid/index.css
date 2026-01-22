@@ -1,0 +1,67 @@
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* Type all of your code in here! */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+.grid-wrapper{
+  border: 1px solid black;
+  font-size: 60px;
+
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'main aside'
+    'bottom aside';
+}
+
+.fruit-box {
+  background-color: grey;
+  border: 1px solid white;
+  padding: 10px;
+
+  grid-area: main;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.veggie-box {
+  background-color: grey;
+  border: 1px solid white;
+  padding: 10px;
+
+  grid-area: bottom;
+
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.beverage-box {
+  background-color: grey;
+  border: 1px solid white;
+
+  grid-area: aside;
+  /* HOW do you do this without a grid? */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* height: 100%; */
+  flex-wrap: wrap;
+
+}
+.beverage-box .food-item:nth-child(1) {
+  flex-grow: 2;
+}
+.beverage-box .food-item:nth-child(2) {
+  order: 3;
+
+}
+
