@@ -52,13 +52,20 @@
   /* HOW do you do this without a grid? */
   display: flex;
   /* flex-direction: column; */
-  align-items: center;
+  /* align-items: center; */
+  /* align-content: center; */
   /* height: 100%; */
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
 }
 .beverage-box .food-item:nth-child(1) {
-  flex-grow: 2;
+  /* flex-grow: 2; */
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
 }
 .beverage-box .food-item:nth-child(2) {
   order: 3;
